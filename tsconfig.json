@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "target": "es5",
+        "removeComments": true,
+        "declaration": true,
+        "outDir": "./lib",
+        "rootDir": "./src",
+        "noImplicitAny": false,
+        "allowSyntheticDefaultImports": true,
+        "lib": ["es7", "es6", "dom"],
+        "forceConsistentCasingInFileNames": true,
+        "alwaysStrict": true
+    }
+}
