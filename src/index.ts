@@ -232,15 +232,7 @@ function combineSameGroupings(groupings: CssGrouping []) {
 
 // TODO write measure 
 function combineSubsets(groupings: CssGrouping []) {
-    groupings.sort((a, b) => {
-        if (a.declarations.length > b.declarations.length) {
-            return -1;
-        }
-        if (a.declarations.length < b.declarations.length) {
-            return 1;
-        }
-        return 0;
-    });
+    groupings.sort((a, b) => b.declarations.length - a.declarations.length);
 
     for (let i = 0; i < groupings.length; i++) {
         const targetGrouping = groupings[i];
